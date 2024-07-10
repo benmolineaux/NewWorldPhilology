@@ -20,7 +20,7 @@ map.on('drag', function() {
 
 // Add markers and bind popups with hyperlinks to documents
 var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
-marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>').openPopup();
+marker1.bindPopup('<a href="newfile.txt" target="_blank">Document 1</a>').openPopup();
 
 var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
 marker2.bindPopup('<a href="document2.pdf" target="_blank">Document 2</a>').openPopup();
