@@ -1,5 +1,5 @@
-s// Initialize the map centered on South America with a specific zoom level
-var map = L.map('map').setView([-38.7833, -47.8667], 3.5); // Coordinates roughly center of South America
+// Initialize the map centered on South America with a specific zoom level
+var map = L.map('map').setView([-33.4372, -69.5885], 6); // Coordinates for Mendoza
 
 // Set up the OpenStreetMap layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -18,12 +18,13 @@ map.on('drag', function() {
     map.panInsideBounds(southAmericaBounds, { animate: false });
 });
 
+// Add a marker for Mendoza
+var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map); // Coordinates for Mendoza
+markerMendoza.bindPopup('<b>Mendoza</b>').openPopup();
+
 // Add markers and bind popups with hyperlinks to documents
-var marker1 = L.marker([-38.8684, -73.17]).addTo(map); // Example coordinates for São Paulo
-marker1.bindPopup('<a href="documents/LecturasAraucanas.pdf" target="_blank">Isolate: Mapudungun—Valdivia 1910</a>').openPopup();
+var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
+marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>').openPopup();
 
 var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
-marker2.bindPopup('<a href="documents/document2.pdf" target="_blank">Document 2</a>').openPopup();
-
-var marker3 = L.marker([-32.8895, -68.8458]).addTo(map); // Example coordinates for Mendoza
-marker3.bindPopup('<a href="documents/Millcayac.pdf" target="_blank">Huarpe:Millcayac – Valdivia 1607</a>').openPopup();
+marker2.bindPopup('<a href="document2.pdf" target="_blank">Document 2</a>').openPopup();
