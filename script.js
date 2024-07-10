@@ -20,7 +20,7 @@ map.on('drag', function() {
 
 // Add a marker for Mendoza
 var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map); // Coordinates for Mendoza
-markerMendoza.bindPopup('<b>Mendoza</b>').openPopup();
+markerMendoza.bindPopup('<b>Huarpe:Millcayac – Valdivia 1607</b>').openPopup();
 
 // Add markers and bind popups with hyperlinks to documents
 var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
