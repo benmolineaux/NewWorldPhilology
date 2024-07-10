@@ -1,5 +1,5 @@
 // Initialize the map centered on South America with a specific zoom level
-var map = L.map('map').setView([-33.4372, -69.5885], 6); // Coordinates for Mendoza
+var map = L.map('map').setView([-33.4372, -69.5885], 3.5); // Coordinates for Mendoza
 
 // Set up the OpenStreetMap layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
