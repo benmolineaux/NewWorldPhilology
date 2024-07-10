@@ -1,5 +1,5 @@
 s// Initialize the map centered on South America with a specific zoom level
-var map = L.map('map').setView([-38.7833, -47.8667], 3.7); // Coordinates roughly center of South America
+var map = L.map('map').setView([-38.7833, -47.8667], 3.5); // Coordinates roughly center of South America
 
 // Set up the OpenStreetMap layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -26,5 +26,5 @@ var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates 
 marker2.bindPopup('<a href="documents/document2.pdf" target="_blank">Document 2</a>').openPopup();
 
 var marker3 = L.marker([-32.8895, -68.8458]).addTo(map); // Example coordinates for Mendoza
-marker2.bindPopup('<a href="documents/Millcayac.pdf" target="_blank">Huarpe:Millcayac – Valdivia 1607</a>').openPopup();
+marker3.bindPopup('<a href="documents/Millcayac.pdf" target="_blank">Huarpe:Millcayac – Valdivia 1607</a>').openPopup();
 
