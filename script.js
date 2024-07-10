@@ -24,3 +24,7 @@ marker1.bindPopup('<a href="newfile.txt" target="_blank">Document 1</a>').openPo
 
 var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
 marker2.bindPopup('<a href="documents/document2.pdf" target="_blank">Document 2</a>').openPopup();
+
+var marker2 = L.marker([-32.8895, -68.8458]).addTo(map); // Example coordinates for Mendoza
+marker2.bindPopup('<a href="documents/Millacayac.pdf" target="_blank">Huarpe:Millacayac – Valdivia 1607</a>').openPopup();
+
