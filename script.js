@@ -1,5 +1,5 @@
 // Initialize the map centered on South America with a specific zoom level
-var map = L.map('map').setView([-25.7833, -47.8667], 4); // Coordinates roughly center of South America
+var map = L.map('map').setView([-33.7833, -47.8667], 4); // Coordinates roughly center of South America
 
 // Set up the OpenStreetMap layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
