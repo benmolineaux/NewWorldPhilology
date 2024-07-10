@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    position: relative; /* Ensure body or a parent element is the containing block */
 }
 
 h1 {
@@ -10,12 +11,11 @@ h1 {
 }
 
 #map {
-    position: fixed; /* Fixed position relative to the viewport */
-    top: 20%; /* Adjust top positioning as needed */
+    position: absolute; /* Fixed position relative to the containing element */
+    top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both vertically and horizontally */
     width: 600px;
     height: 400px;
     border: 1px solid #ccc;
-    z-index: 1000; /* Ensure it's on top */
 }
