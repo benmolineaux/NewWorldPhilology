@@ -31,9 +31,9 @@ function updateInfoBox(content) {
 
 // Add a red marker for Mendoza
 var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
-markerMendoza.bindPopup('<b>Mendoza</b>');
+markerMendoza.bindPopup('<b>Millcayac</b>');
 markerMendoza.on('click', function() {
-    updateInfoBox('<h2>Mendoza</h2><p>Details about Mendoza.</p>');
+    updateInfoBox('<h2>Millcayac</h2><p>Language Family: Huarpe.</p>'<h3>sources</h3><p>Valdivia, Luys de. 1607.</p>);
 });
 
 // Add other markers and bind popups with hyperlinks to documents
