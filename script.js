@@ -18,8 +18,14 @@ map.on('drag', function() {
     map.panInsideBounds(southAmericaBounds, { animate: false });
 });
 
+// Custom red marker icon
+var redMarker = L.AwesomeMarkers.icon({
+    icon: 'info-sign',
+    markerColor: 'red'
+});
+
 // Add a marker for Mendoza
-var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map); // Coordinates for Mendoza
+var markerMendoza = L.marker([-32.8895, -68.8458], {icon: redMarker}).addTo(map); // Coordinates for Mendoza
 markerMendoza.bindPopup('<b>Huarpe:Millcayac – Valdivia 1607</b>').openPopup();
 
 // Add markers and bind popups with hyperlinks to documents
