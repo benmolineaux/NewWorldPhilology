@@ -44,13 +44,13 @@ markerMendoza.on('click', function() {
 });
 
 // Add other markers and bind popups with hyperlinks to documents
-var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
+var marker1 = L.marker([-31.32, -68.3134]).addTo(map);
 marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>');
 marker1.on('click', function() {
     updateInfoBox('documents/Allentiac.html');
 });
 
-var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
+var marker2 = L.marker([-54.56, -67.35]).addTo(map); // Example coordinates for São Paulo
 marker2.bindPopup('<a href="document2.pdf" target="_blank">Document 2</a>');
 marker2.on('click', function() {
     updateInfoBox('documents/Yahgan.html');
