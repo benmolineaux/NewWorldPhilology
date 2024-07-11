@@ -40,18 +40,18 @@ function updateInfoBox(url) {
 var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
 markerMendoza.bindPopup('<b>Millcayac</b>');
 markerMendoza.on('click', function() {
-    updateInfoBox('Millcayac.html');
+    updateInfoBox('documents/Millcayac.html');
 });
 
 // Add other markers and bind popups with hyperlinks to documents
 var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
 marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>');
 marker1.on('click', function() {
-    updateInfoBox('Allentiac.html');
+    updateInfoBox('documents/Allentiac.html');
 });
 
 var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
 marker2.bindPopup('<a href="document2.pdf" target="_blank">Document 2</a>');
 marker2.on('click', function() {
-    updateInfoBox('Yahgan.html');
+    updateInfoBox('documents/Yahgan.html');
 });
