@@ -79,7 +79,7 @@ marker7.bindPopup('<a>Chono</a>');
 marker7.on('click', function() {
     updateInfoBox('documents/Chono.html');
 });
-/*
+
 var marker8 = L.marker([-54.911111, -65.9925]).addTo(map); // Example coordinates for São Paulo
 marker8.bindPopup('<a>Haush</a>');
 marker8.on('click', function() {
@@ -97,4 +97,4 @@ marker10.bindPopup('<a>Gününa Yajich</a>');
 marker10.on('click', function() {
     updateInfoBox('documents/GununaYajich.html');
 });
-*/
+
