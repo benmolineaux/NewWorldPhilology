@@ -99,7 +99,7 @@ marker10.on('click', function() {
 });
 
 var marker11 = L.marker([-27.2564, -55.5433]).addTo(map); // Example coordinates for São Paulo
-marker10.bindPopup('<a>Classical Guaraní</a>');
-marker10.on('click', function() {
+marker11.bindPopup('<a>Classical Guaraní</a>');
+marker11.on('click', function() {
     updateInfoBox('documents/Guarani.html');
 });
