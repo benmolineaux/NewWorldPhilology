@@ -68,7 +68,7 @@ marker5.on('click', function() {
     updateInfoBox('documents/Selknam.html');
 });
 
-var marker6 = L.marker([-52, -71.249997]).addTo(map); // Example coordinates for São Paulo
+var marker6 = L.marker([-43.863889, -69.04722]).addTo(map); // Example coordinates for São Paulo
 marker6.bindPopup('<a>Tehuelche</a>');
 marker6.on('click', function() {
     updateInfoBox('documents/Tehuelche.html');
