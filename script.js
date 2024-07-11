@@ -50,7 +50,7 @@ marker1.on('click', function() {
     updateInfoBox('documents/Allentiac.html');
 });
 
-var marker2 = L.marker([-52.774940, -69.295958]).addTo(map);
+var marker2 = L.marker([-54.933385, -67.591667]).addTo(map);
 marker2.bindPopup('<a>Yahgan</a>');
 marker2.on('click', function() {
     updateInfoBox('documents/Yahgan.html');
