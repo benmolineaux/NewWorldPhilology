@@ -50,8 +50,38 @@ marker1.on('click', function() {
     updateInfoBox('documents/Allentiac.html');
 });
 
-var marker2 = L.marker([-54.933556, -67.591028]).addTo(map); // Example coordinates for São Paulo
-marker2.bindPopup('<a>Yámana</a>');
+var marker2 = L.marker([-38.883333, -73.283333]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Mapudungun</a>');
 marker2.on('click', function() {
-    updateInfoBox('documents/Yahgan.html');
+    updateInfoBox('documents/Mapudungun.html');
+});
+
+var marker2 = L.marker([-49.126, -74.413]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Qawasqar</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/Qawasqar.html');
+});
+
+var marker2 = L.marker([-52.776752, -69.290994]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Selk'nam</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/Selk'nam.html');
+});
+
+var marker2 = L.marker([-52, -71.249997]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Tehuelche</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/Tehuelche.html');
+});
+
+var marker2 = L.marker([-46.5, -74.416667]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Chono</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/Chono.html');
+});
+
+var marker2 = L.marker([-42.5, -68.266667]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Teuschen</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/Teuschen.html');
 });
