@@ -44,7 +44,7 @@ markerMendoza.on('click', function() {
 });
 
 // Add other markers and bind popups with hyperlinks to documents
-var marker1 = L.marker([-31.32, -68.3134]).addTo(map);
+var marker1 = L.marker([-31.534167, -68.526111]).addTo(map);
 marker1.bindPopup('<a>Allentiac</a>');
 marker1.on('click', function() {
     updateInfoBox('documents/Allentiac.html');
