@@ -89,11 +89,11 @@ marker8.on('click', function() {
 var marker9 = L.marker([-36.4442, -66.503598]).addTo(map); // Example coordinates for São Paulo
 marker9.bindPopup('<a>Gününa Küne</a>');
 marker9.on('click', function() {
-    updateInfoBox('documents/GününaKüne.html');
+    updateInfoBox('documents/GununaKune.html');
 });
 
 var marker10 = L.marker([-35.334986, -65.836618]).addTo(map); // Example coordinates for São Paulo
 marker10.bindPopup('<a>Gününa Yajich</a>');
 marker10.on('click', function() {
-    updateInfoBox('documents/GününaYajich.html');
+    updateInfoBox('documents/GununaYajich.html');
 });
