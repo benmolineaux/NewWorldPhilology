@@ -22,7 +22,7 @@ map.on('drag', function() {
 //var redMarker = L.AwesomeMarkers.icon({
   //  icon: 'info-sign',
    // markerColor: 'red'
-});
+//});
 
 // Function to update the info box content
 function updateInfoBox(content) {
