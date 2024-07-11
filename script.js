@@ -61,13 +61,13 @@ marker4.bindPopup('<a>Qawasqar</a>');
 marker4.on('click', function() {
     updateInfoBox('documents/Qawasqar.html');
 });
-
+/*
 var marker5 = L.marker([-52.776752, -69.290994]).addTo(map); // Example coordinates for São Paulo
 marker5.bindPopup('<a>Selk'nam</a>');
 marker5.on('click', function() {
     updateInfoBox('documents/Selknam.html');
 });
-/*
+
 var marker6 = L.marker([-52, -71.249997]).addTo(map); // Example coordinates for São Paulo
 marker6.bindPopup('<a>Tehuelche</a>');
 marker6.on('click', function() {
