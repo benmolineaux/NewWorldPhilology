@@ -55,7 +55,7 @@ marker3.bindPopup('<a>Mapudungun</a>');
 marker3.on('click', function() {
     updateInfoBox('documents/Mapudungun.html');
 });
-/*
+
 var marker4 = L.marker([-49.126, -74.413]).addTo(map); // Example coordinates for São Paulo
 marker4.bindPopup('<a>Qawasqar</a>');
 marker4.on('click', function() {
@@ -67,7 +67,7 @@ marker5.bindPopup('<a>Selk'nam</a>');
 marker5.on('click', function() {
     updateInfoBox('documents/Selknam.html');
 });
-
+/*
 var marker6 = L.marker([-52, -71.249997]).addTo(map); // Example coordinates for São Paulo
 marker6.bindPopup('<a>Tehuelche</a>');
 marker6.on('click', function() {
