@@ -80,8 +80,20 @@ marker2.on('click', function() {
     updateInfoBox('documents/Chono.html');
 });
 
-var marker2 = L.marker([-42.5, -68.266667]).addTo(map); // Example coordinates for São Paulo
-marker2.bindPopup('<a>Teuschen</a>');
+var marker2 = L.marker([-54.911111, -65.9925]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Haush</a>');
 marker2.on('click', function() {
-    updateInfoBox('documents/Teuschen.html');
+    updateInfoBox('documents/Haush.html');
+});
+
+var marker2 = L.marker([-36.4442, -66.503598]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Gününa Küne</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/GününaKüne.html');
+});
+
+var marker2 = L.marker([-35.334986, -65.836618]).addTo(map); // Example coordinates for São Paulo
+marker2.bindPopup('<a>Gününa Yajich</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/GününaYajich.html');
 });
