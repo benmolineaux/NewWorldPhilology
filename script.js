@@ -25,26 +25,33 @@ map.on('drag', function() {
 //});
 
 // Function to update the info box content
-function updateInfoBox(content) {
-    document.getElementById('info-content').innerHTML = content;
+function updateInfoBox(url) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById('info-content').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
 }
 
 // Add a red marker for Mendoza
 var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
 markerMendoza.bindPopup('<b>Millcayac</b>');
 markerMendoza.on('click', function() {
-    updateInfoBox('<h2>Millcayac</h2><p>Language Family: Huarpe.</p><h3>sources</h3><p>Valdivia, Luys de. 1607.</p>');
+    updateInfoBox('Millcayac.html');
 });
 
 // Add other markers and bind popups with hyperlinks to documents
 var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
 marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>');
 marker1.on('click', function() {
-    updateInfoBox('<h2>Marker 1</h2><p>Details about Marker 1.</p>');
+    updateInfoBox('Allentiac.html');
 });
 
 var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
 marker2.bindPopup('<a href="document2.pdf" target="_blank">Document 2</a>');
 marker2.on('click', function() {
-    updateInfoBox('<h2>Marker 2</h2><p>Details about Marker 2.</p>');
+    updateInfoBox('Yahgan.html');
 });
