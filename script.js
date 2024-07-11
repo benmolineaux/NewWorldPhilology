@@ -24,13 +24,24 @@ map.on('drag', function() {
     //markerColor: 'red'
 //});
 
+// Function to update the info box content
+function updateInfoBox(content) {
+    document.getElementById('info-content').innerHTML = content;
+}
+
 // Add a marker for Mendoza
-//var markerMendoza = L.marker([-32.8895, -68.8458], {icon: redMarker}).addTo(map); // Coordinates for Mendoza
-//markerMendoza.bindPopup('<b>Huarpe:Millcayac – Valdivia 1607</b>').openPopup();
+var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map); // Coordinates for Mendoza
+markerMendoza.bindPopup('<b>Huarpe:Millcayac – Valdivia 1607</b>');
+markerMendoza.on('click', function() {
+    updateInfoBox('<h2>Mendoza</h2><p>Details about Mendoza.</p>');
+});
 
 // Add markers and bind popups with hyperlinks to documents
 var marker1 = L.marker([-15.7833, -47.8667]).addTo(map);
-marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>').openPopup();
+marker1.bindPopup('<a href="document1.pdf" target="_blank">Document 1</a>');
+marker1.on('click', function() {
+    updateInfoBox('<h2>Marker 1</h2><p>Details about Marker 1.</p>');
+});
 
 //var marker2 = L.marker([-23.5505, -46.6333]).addTo(map); // Example coordinates for São Paulo
 //marker2.bindPopup('<a href="document2.pdf" target="_blank">Document 2</a>').openPopup();
