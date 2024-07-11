@@ -50,6 +50,12 @@ marker1.on('click', function() {
     updateInfoBox('documents/Allentiac.html');
 });
 
+var marker2 = L.marker([-52.774940, -69.295958]).addTo(map);
+marker2.bindPopup('<a>Yahgan</a>');
+marker2.on('click', function() {
+    updateInfoBox('documents/Yahgan.html');
+});
+
 var marker3 = L.marker([-38.883333, -73.283333]).addTo(map); // Example coordinates for São Paulo
 marker3.bindPopup('<a>Mapudungun</a>');
 marker3.on('click', function() {
