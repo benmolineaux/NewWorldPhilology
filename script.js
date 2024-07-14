@@ -134,4 +134,8 @@ marker14.on('click', function() {
     updateInfoBox('documents/Abipon.html');
 });
 
-
+var marker14 = L.marker([-23.00, -69.00]).addTo(map); // Example coordinates for São Paulo
+marker14.bindPopup('<a>Kunza</a>');
+marker14.on('click', function() {
+    updateInfoBox('documents/Kunza.html');
+});
