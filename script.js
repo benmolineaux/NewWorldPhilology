@@ -134,8 +134,15 @@ marker14.on('click', function() {
     updateInfoBox('documents/Abipon.html');
 });
 
-var marker14 = L.marker([-23.00, -69.00]).addTo(map); // Example coordinates for São Paulo
-marker14.bindPopup('<a>Kunza</a>');
-marker14.on('click', function() {
+var marker15 = L.marker([-23.00, -69.00]).addTo(map); // Example coordinates for São Paulo
+marker15.bindPopup('<a>Kunza</a>');
+marker15.on('click', function() {
     updateInfoBox('documents/Kunza.html');
 });
+
+var marker16 = L.marker([-43.19, -70.19]).addTo(map); // Example coordinates for São Paulo
+marker16.bindPopup('<a>Teushen</a>');
+marker16.on('click', function() {
+    updateInfoBox('documents/Teushen.html');
+});
+
