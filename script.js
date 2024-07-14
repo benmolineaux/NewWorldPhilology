@@ -92,7 +92,7 @@ marker8.on('click', function() {
     updateInfoBox('documents/Haush.html');
 });
 
-var marker9 = L.marker([-36.4442, -66.503598]).addTo(map); // Example coordinates for São Paulo
+var marker9 = L.marker([-35.7989, -61.918386]).addTo(map); // Example coordinates for São Paulo
 marker9.bindPopup('<a>Het</a>');
 marker9.on('click', function() {
     updateInfoBox('documents/Het.html');
