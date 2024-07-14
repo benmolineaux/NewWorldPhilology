@@ -109,3 +109,29 @@ marker11.bindPopup('<a>Classical Guaraní</a>');
 marker11.on('click', function() {
     updateInfoBox('documents/Guarani.html');
 });
+
+var marker12 = L.marker([-31.173144, -63.605339]).addTo(map); // Example coordinates for São Paulo
+marker12.bindPopup('<a>Comechingón</a>');
+marker12.on('click', function() {
+    updateInfoBox('documents/Comechingon.html');
+});
+
+var marker13 = L.marker([-27.224938, -67.577070]).addTo(map); // Example coordinates for São Paulo
+marker13.bindPopup('<a>Kakán</a>');
+marker13.on('click', function() {
+    updateInfoBox('documents/Kakan.html');
+});
+
+var marker14 = L.marker([-32.360226, -65.050563]).addTo(map); // Example coordinates for São Paulo
+marker14.bindPopup('<a>Sanavirón</a>');
+marker14.on('click', function() {
+    updateInfoBox('documents/Sanaviron.html');
+});
+
+var marker14 = L.marker([-29.00, -61.00]).addTo(map); // Example coordinates for São Paulo
+marker14.bindPopup('<a>Abipón</a>');
+marker14.on('click', function() {
+    updateInfoBox('documents/Abipon.html');
+});
+
+
