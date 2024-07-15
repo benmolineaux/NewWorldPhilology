@@ -146,3 +146,14 @@ marker16.on('click', function() {
     updateInfoBox('documents/Teushen.html');
 });
 
+var marker17 = L.marker([-17.00, -68.50]).addTo(map); // Example coordinates for São Paulo
+marker17.bindPopup('<a>Central Aymara</a>');
+marker17.on('click', function() {
+    updateInfoBox('documents/Aymara.html');
+});
+
+var marker18 = L.marker([-12.74, -75.81]).addTo(map); // Example coordinates for São Paulo
+marker18.bindPopup('<a>Jaqaru</a>');
+marker18.on('click', function() {
+    updateInfoBox('documents/Jaqaru.html');
+});
