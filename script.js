@@ -157,3 +157,9 @@ marker18.bindPopup('<a>Jaqaru</a>');
 marker18.on('click', function() {
     updateInfoBox('documents/Jaqaru.html');
 });
+
+var marker19 = L.marker([-20.92, -66.33]).addTo(map); // Example coordinates for São Paulo
+marker19.bindPopup('<a>South Bolivia Quechua</a>');
+marker19.on('click', function() {
+    updateInfoBox('documents/SouthBoliviaQuechua.html');
+});
