@@ -261,3 +261,9 @@ marker34.bindPopup('<a>Maca</a>');
 marker34.on('click', function() {
     updateInfoBox('documents/Maca.html');
 });
+
+var marker35 = L.marker([-27.82, -63.25]).addTo(map); // Example coordinates for São Paulo
+marker35.bindPopup('<a>Santiago del Estero Quichua</a>');
+marker35.on('click', function() {
+    updateInfoBox('documents/SantiagoDelEsteroQuichua.html');
+});
