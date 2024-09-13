@@ -104,7 +104,7 @@ marker10.on('click', function() {
     updateInfoBox('documents/GununaYajich.html');
 });
 
-var marker11 = L.marker([-27.2564, -55.5433]).addTo(map); // Example coordinates for São Paulo
+var marker11 = L.AwesomeMarkers.icon([-27.2564, -55.5433]).addTo(map); // Example coordinates for São Paulo
 marker11.bindPopup('<a>Classical Guaraní</a>');
 marker11.on('click', function() {
     updateInfoBox('documents/Guarani.html');
