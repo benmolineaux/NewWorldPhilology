@@ -177,3 +177,9 @@ marker19.bindPopup('<a>Lule</a>');
 marker19.on('click', function() {
     updateInfoBox('documents/Lule.html');
 });
+
+var marker19 = L.marker([-27.41, -58.97]).addTo(map); // Example coordinates for São Paulo
+marker19.bindPopup('<a>Vilela</a>');
+marker19.on('click', function() {
+    updateInfoBox('documents/Vilela.html');
+});
