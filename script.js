@@ -19,6 +19,16 @@ map.on('drag', function() {
 });
 
 // Custom red marker icon
+var redIcon = L.icon({
+    iconUrl: 'path/to/red-icon.png', // Path to your custom marker image
+    iconSize: [25, 41], // size of the icon
+    iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+    popupAnchor: [1, -34], // point from which the popup should open relative to the iconAnchor
+    shadowUrl: 'https://unpkg.com/leaflet/dist/images/marker-shadow.png',
+    shadowSize: [41, 41] // size of the shadow
+});
+
+// Custom red marker icon
 //var redMarker = L.AwesomeMarkers.icon({
   //  icon: 'info-sign',
    // markerColor: 'red'
@@ -37,7 +47,7 @@ function updateInfoBox(url) {
 }
 
 // Add a red marker for Mendoza
-var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
+var markerMendoza = L.marker([-32.8895, -68.8458], {icon: redIcon}).addTo(map);
 markerMendoza.bindPopup('<a>Millcayac</a>');
 markerMendoza.on('click', function() {
     updateInfoBox('documents/Millcayac.html');
