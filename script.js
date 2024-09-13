@@ -219,3 +219,33 @@ marker27.bindPopup('<a>Toba</a>');
 marker27.on('click', function() {
     updateInfoBox('documents/Toba.html');
 });
+
+var marker28 = L.marker([-22.19, -63.24]).addTo(map); // Example coordinates for São Paulo
+marker28.bindPopup('<a>Iyojwa\'ja Chorote</a>');
+marker28.on('click', function() {
+    updateInfoBox('documents/IyojwajaChorote.html');
+});
+
+var marker29 = L.marker([-22.21, -62.65]).addTo(map); // Example coordinates for São Paulo
+marker29.bindPopup('<a>Iyo\'wujwa Chorote</a>');
+marker29.on('click', function() {
+    updateInfoBox('documents/IyowujwaChorote.html');
+});
+
+var marker29 = L.marker([-23.16, -62.18]).addTo(map); // Example coordinates for São Paulo
+marker29.bindPopup('<a>Wichí Lhamtés Güisnay</a>');
+marker29.on('click', function() {
+    updateInfoBox('documents/WichiLG.html');
+});
+
+var marker29 = L.marker([-21.99, -63.60]).addTo(map); // Example coordinates for São Paulo
+marker29.bindPopup('<a>Wichí Lhamtés Nocten</a>');
+marker29.on('click', function() {
+    updateInfoBox('documents/WichiLN.html');
+});
+
+var marker29 = L.marker([-24.22, -61.91]).addTo(map); // Example coordinates for São Paulo
+marker29.bindPopup('<a>Wichí Lhamtés Vejoz</a>');
+marker29.on('click', function() {
+    updateInfoBox('documents/WichiLV.html');
+});
