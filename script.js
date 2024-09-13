@@ -160,11 +160,11 @@ marker17.on('click', function() {
     updateInfoBox('documents/Aymara.html');
 });
 
-var marker18 = L.marker([-12.74, -75.81]).addTo(map); // Example coordinates for São Paulo
-marker18.bindPopup('<a>Jaqaru</a>');
-marker18.on('click', function() {
-    updateInfoBox('documents/Jaqaru.html');
-});
+//var marker18 = L.marker([-12.74, -75.81]).addTo(map); // Example coordinates for São Paulo
+//marker18.bindPopup('<a>Jaqaru</a>');
+//marker18.on('click', function() {
+//    updateInfoBox('documents/Jaqaru.html');
+//});
 
 var marker19 = L.marker([-20.92, -66.33], { icon: redDivIcon }).addTo(map); // Example coordinates for São Paulo
 marker19.bindPopup('<a>South Bolivia Quechua</a>');
