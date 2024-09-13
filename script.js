@@ -201,3 +201,21 @@ marker24.bindPopup('<a>Güenoa</a>');
 marker24.on('click', function() {
     updateInfoBox('documents/Guenoa.html');
 });
+
+var marker25 = L.marker([-28.10, -60.41]).addTo(map); // Example coordinates for São Paulo
+marker24.bindPopup('<a>Mocoví</a>');
+marker24.on('click', function() {
+    updateInfoBox('documents/Mocovi.html');
+});
+
+var marker25 = L.marker([-25.01, -60.15]).addTo(map); // Example coordinates for São Paulo
+marker24.bindPopup('<a>Pilagá</a>');
+marker24.on('click', function() {
+    updateInfoBox('documents/Pilaga.html');
+});
+
+var marker25 = L.marker([-23.77, -61.96]).addTo(map); // Example coordinates for São Paulo
+marker24.bindPopup('<a>Toba</a>');
+marker24.on('click', function() {
+    updateInfoBox('documents/Toba.html');
+});
