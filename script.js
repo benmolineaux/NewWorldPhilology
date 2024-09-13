@@ -45,7 +45,7 @@ function updateInfoBox(url) {
 }
 
 // Add a red marker for Mendoza
-var markerMendoza = L.marker([-32.8895, -68.8458], {icon: redIcon}).addTo(map);
+var markerMendoza = L.marker([-32.8895, -68.8458], { icon: redDivIcon }).addTo(map);
 markerMendoza.bindPopup('<a>Millcayac</a>');
 markerMendoza.on('click', function() {
     updateInfoBox('documents/Millcayac.html');
