@@ -18,14 +18,12 @@ map.on('drag', function() {
     map.panInsideBounds(southAmericaBounds, { animate: false });
 });
 
-// Custom red marker icon
-var redIcon = L.icon({
-    iconUrl: 'path/to/red-icon.png', // Path to your custom marker image
-    iconSize: [25, 41], // size of the icon
-    iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
-    popupAnchor: [1, -34], // point from which the popup should open relative to the iconAnchor
-    shadowUrl: 'https://unpkg.com/leaflet/dist/images/marker-shadow.png',
-    shadowSize: [41, 41] // size of the shadow
+// Create a custom red marker using DivIcon
+var redDivIcon = L.divIcon({
+    className: 'custom-div-icon',
+    html: "<div style='background-color: red; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white;'></div>",
+    iconSize: [20, 20],
+    iconAnchor: [10, 10]
 });
 
 // Custom red marker icon
@@ -47,7 +45,7 @@ function updateInfoBox(url) {
 }
 
 // Add a red marker for Mendoza
-var markerMendoza = L.marker([-32.8895, -68.8458], {icon: redIcon}).addTo(map);
+var markerMendoza = L.marker([-32.8895, -68.8458], { icon: redDivIcon }).addTo(map);
 markerMendoza.bindPopup('<a>Millcayac</a>');
 markerMendoza.on('click', function() {
     updateInfoBox('documents/Millcayac.html');
