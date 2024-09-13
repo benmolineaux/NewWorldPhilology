@@ -19,10 +19,10 @@ map.on('drag', function() {
 });
 
 // Custom red marker icon
-//var redMarker = L.AwesomeMarkers.icon({
-  //  icon: 'info-sign',
-   // markerColor: 'red'
-//});
+var redMarker = L.AwesomeMarkers.icon({
+  icon: 'info-sign',
+   markerColor: 'red'
+});
 
 // Function to update the info box content
 function updateInfoBox(url) {
