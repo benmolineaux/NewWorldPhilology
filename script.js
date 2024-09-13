@@ -232,20 +232,32 @@ marker29.on('click', function() {
     updateInfoBox('documents/IyowujwaChorote.html');
 });
 
-var marker29 = L.marker([-23.16, -62.18]).addTo(map); // Example coordinates for São Paulo
-marker29.bindPopup('<a>Wichí Lhamtés Güisnay</a>');
-marker29.on('click', function() {
+var marker30 = L.marker([-23.16, -62.18]).addTo(map); // Example coordinates for São Paulo
+marker30.bindPopup('<a>Wichí Lhamtés Güisnay</a>');
+marker30.on('click', function() {
     updateInfoBox('documents/WichiLG.html');
 });
 
-var marker29 = L.marker([-21.99, -63.60]).addTo(map); // Example coordinates for São Paulo
-marker29.bindPopup('<a>Wichí Lhamtés Nocten</a>');
-marker29.on('click', function() {
+var marker31 = L.marker([-21.99, -63.60]).addTo(map); // Example coordinates for São Paulo
+marker31.bindPopup('<a>Wichí Lhamtés Nocten</a>');
+marker31.on('click', function() {
     updateInfoBox('documents/WichiLN.html');
 });
 
-var marker29 = L.marker([-24.22, -61.91]).addTo(map); // Example coordinates for São Paulo
-marker29.bindPopup('<a>Wichí Lhamtés Vejoz</a>');
-marker29.on('click', function() {
+var marker32 = L.marker([-24.22, -61.91]).addTo(map); // Example coordinates for São Paulo
+marker32.bindPopup('<a>Wichí Lhamtés Vejoz</a>');
+marker32.on('click', function() {
     updateInfoBox('documents/WichiLV.html');
+});
+
+var marker33 = L.marker([-22.86, -61.76]).addTo(map); // Example coordinates for São Paulo
+marker33.bindPopup('<a>Nivaclé</a>');
+marker33.on('click', function() {
+    updateInfoBox('documents/Nivacle.html');
+});
+
+var marker34 = L.marker([-25.01, -57.37]).addTo(map); // Example coordinates for São Paulo
+marker34.bindPopup('<a>Maca</a>');
+marker34.on('click', function() {
+    updateInfoBox('documents/Maca.html');
 });
