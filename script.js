@@ -45,7 +45,7 @@ function updateInfoBox(url) {
 }
 
 // Add a red marker for Mendoza
-var markerMendoza = L.marker([-32.8895, -68.8458], { icon: redDivIcon }).addTo(map);
+var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
 markerMendoza.bindPopup('<a>Millcayac</a>');
 markerMendoza.on('click', function() {
     updateInfoBox('documents/Millcayac.html');
@@ -112,7 +112,7 @@ marker10.on('click', function() {
     updateInfoBox('documents/GununaYajich.html');
 });
 
-var marker11 = L.marker([-27.2564, -55.5433]).addTo(map); // Example coordinates for São Paulo
+var marker11 = L.marker([-27.2564, -55.5433], { icon: redDivIcon }).addTo(map); // Example coordinates for São Paulo
 marker11.bindPopup('<a>Classical Guaraní</a>');
 marker11.on('click', function() {
     updateInfoBox('documents/Guarani.html');
@@ -154,7 +154,7 @@ marker16.on('click', function() {
     updateInfoBox('documents/Teushen.html');
 });
 
-var marker17 = L.marker([-17.00, -68.50]).addTo(map); // Example coordinates for São Paulo
+var marker17 = L.marker([-17.00, -68.50], { icon: redDivIcon }).addTo(map); // Example coordinates for São Paulo
 marker17.bindPopup('<a>Central Aymara</a>');
 marker17.on('click', function() {
     updateInfoBox('documents/Aymara.html');
@@ -166,8 +166,14 @@ marker18.on('click', function() {
     updateInfoBox('documents/Jaqaru.html');
 });
 
-var marker19 = L.marker([-20.92, -66.33]).addTo(map); // Example coordinates for São Paulo
+var marker19 = L.marker([-20.92, -66.33], { icon: redDivIcon }).addTo(map); // Example coordinates for São Paulo
 marker19.bindPopup('<a>South Bolivia Quechua</a>');
 marker19.on('click', function() {
     updateInfoBox('documents/SouthBoliviaQuechua.html');
+});
+
+var marker19 = L.marker([-25.22, -61.89]).addTo(map); // Example coordinates for São Paulo
+marker19.bindPopup('<a>Lule</a>');
+marker19.on('click', function() {
+    updateInfoBox('documents/Lule.html');
 });
