@@ -104,7 +104,8 @@ marker8.on('click', function() {
 });
 
 var marker9 = L.marker([-35.7989, -61.918386]).addTo(map); // Example coordinates for São Paulo
-marker9._icon.classList.add('<a>Querandí</a>');
+marker9._icon.classList.add('red-marker'); 
+marker9.bindPopup('<a>Querandí</a>');
 marker9.on('click', function() {
     updateInfoBox('documents/Het.html');
 });
