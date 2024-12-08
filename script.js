@@ -43,6 +43,9 @@ function updateInfoBox(url) {
     };
     xhr.send();
 }
+var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
+markerMendoza._icon.classList.add('red-marker'); // Add a custom class to the marker icon
+
 
 // Add a red marker for Mendoza
 var markerMendoza = L.marker([-32.8895, -68.8458]).addTo(map);
